@@ -1,0 +1,6 @@
+id: URLListing
+name: Basename Listing
+version: 1.0.0
+l10n_class: URLListing::L10N
+
+list_properties: $URLListing::URLListing::Listing::properties
