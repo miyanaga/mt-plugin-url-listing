@@ -25,7 +25,7 @@ sub properties {
                 my ( $prop, $obj, $app ) = @_;
                 my $url = $obj->permalink;
                 my $path = $url;
-                $path =~ s!^https?://!/!;
+                $path =~ s!^https?://([^/]+)!!;
                 qq{<input class="text full" readonly="readonly" type="text" onclick="this.select();" value="$path" />};
             },
         },
